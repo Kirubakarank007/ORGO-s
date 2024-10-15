@@ -7,8 +7,8 @@ const Shop = ()=>{
     return (
         <div>
             <Hero/>
-            <Popular/>
-            <Offer/>
+            {/* <Popular/>
+            <Offer/> */}
 
         </div>
     )
