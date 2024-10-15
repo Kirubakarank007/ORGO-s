@@ -8,7 +8,7 @@ const Shop = ()=>{
         <div>
             <Hero/>
             <Popular/>
-            {/* <Offer/> */}
+            <Offer/>
 
         </div>
     )
