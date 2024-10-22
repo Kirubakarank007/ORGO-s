@@ -1,6 +1,6 @@
 import React from "react";
 import './NewProducts.css';
-import new_products from '../Assests/new_product/new_product.js'
+import all_products from '../Assests/all_products.js'
 import Item from "../Items/Item.jsx";
 
 const NewProducts=()=>{
@@ -9,7 +9,7 @@ const NewProducts=()=>{
             <h1>NEW PRODUCTS</h1>
             <hr />
             <div className="product_item">
-                {new_products.map((item,i)=>{
+                {all_products.map((item,i)=>{
                     return <Item key={i} id={item.id} name={item.name} image={item.image}  new_price={item.new_price} old_price={item.old_price} />
                 })}
                 
