@@ -21,7 +21,7 @@ const ProductDisplay =(props)=>{
             </div>
             <div className="productdisplay-right">
                 <h1>{product.name}</h1>
-                <div className="productdisplay-right-star">
+                <div className="productdisplay-right-stars">
                     <img src={star_icon} alt="" />
                     <img src={star_icon} alt="" />
                     <img src={star_icon} alt="" />
@@ -29,12 +29,12 @@ const ProductDisplay =(props)=>{
                     <img src={start_dull_icon} alt="" />
                     <p>(122)</p>
                 </div>
-                <div className="product display-right-prices">
+                <div className="productdisplay-right-prices">
                     <div className="productdisplay-right-price-old">${product.old_price}</div>
                     <div className="productdisplay-right-price-new">${product.new_price}</div>
                 </div>
                 <div className="productdisplay-right-description">
-                    jfbvdnslkdakjbfvnkcsopsefvojie eiovn
+                    {product.name}
                 </div>
                 <button>ADD TO CART</button>
                 <p className="productdisplay-right-category"><span>Category :</span>{product.category}</p>
