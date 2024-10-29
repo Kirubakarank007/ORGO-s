@@ -1,5 +1,6 @@
 import React from "react";
 import './Footer.css';
+import shop_icon from '../Assests/shop.png'
 import facebook_icon from '../Assests/facebook.png'
 import instagram_icon from '../Assests/instagram.png'
 import whatsapp_icon from '../Assests/whatsapp.png'
@@ -8,7 +9,7 @@ const Footer=()=>{
     return(
         <div className="footer">
             <div className="footer-logo">
-                <img src="" alt="" />
+                <img src={shop_icon} alt="" />
                 <p>SHOPPER</p>
             </div>
             <ul className="footer-links">

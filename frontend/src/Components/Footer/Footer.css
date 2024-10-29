@@ -9,7 +9,12 @@
 .footer-logo{
     display: flex;
     align-items: center;
-    gap: 20px;
+}
+
+.footer-logo img{
+    display: flex;
+    height: 120;
+    width: 120px;
 }
 
 .footer-logo p{
