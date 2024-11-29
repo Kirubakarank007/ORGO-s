@@ -4,7 +4,7 @@ import logo from '../Assests/plant.png'
 import cart_icon from '../Assests/cart-icon.png'
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
-import nav_dropdown_icon from '../Assests/drop_down.png'
+import nav_dropdown_icon from '../Assests/menu.png'
 
 const Navbar=()=>{
 
@@ -23,7 +23,6 @@ const Navbar=()=>{
                 <img src={logo} alt="" />
                 <p>ORGO's</p>
             </div>
-            <img className="nav-dropdown" src={nav_dropdown_icon} alt="" onClick={dropDown_toggle} />
             <ul ref={menuRef} className="nav-menu">
                 <li onClick={()=>setMenu("shop")} > <Link to='/' style={{textDecoration:'none'}}>Shop</Link> {menu==="shop"?<hr/>:<></>} </li>
                 <li onClick={()=>setMenu("fruits")}> <Link to='/fruits' style={{textDecoration:'none'}}>fruits</Link>{menu==="fruits"?<hr/>:<></>}</li>
@@ -35,6 +34,7 @@ const Navbar=()=>{
                 <Link to='/cart'> <img src={cart_icon} alt="" /> </Link>
                 <div className="nav-cart-count">{getTotalCartItems()}</div>
             </div>
+            <img className="nav-dropdown" src={nav_dropdown_icon} alt="" onClick={dropDown_toggle} />
 
         </div>
     )
